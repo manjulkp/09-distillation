@@ -1,0 +1,13 @@
+[project]
+name = "distillation"
+version = "0.1.0"
+description = "Distill the fine-tuned DistilBERT from Project 7 into a very small student model"
+requires-python = ">=3.12"
+dependencies = ["matplotlib>=3.10", "torch>=2.9", "transformers>=4.50"]
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
